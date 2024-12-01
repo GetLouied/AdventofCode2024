@@ -1,0 +1,13 @@
+- Read from text file 
+- Create two lists with each column of numbers
+- Sort both lists in ascending order (O(logn): tim sort)
+- Loop and compare each number at the same index (O(n))
+- Accumulate sum for total distances
+
+- Create a map with the right column (column2)
+    - Key: integer
+    - Value: count
+- Initialize a similarity score
+- For each number in the left column (column1) multiply by it's respective value in the map of column2
+- Add each score to the similarity score
+- Return final similarity score
