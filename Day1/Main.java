@@ -2,11 +2,11 @@ package Day1;
 
 import java.util.List;
 
-import Day1.calculations.DistanceCalculator;
-import Day1.calculations.SimilarityScore;
-import Day1.processing.ListProcessor;
-import Day1.utils.FileUtils;
-import Day1.utils.Pair;
+import Helpers.calculations.DistanceCalculator;
+import Helpers.calculations.SimilarityScore;
+import Helpers.processing.ListProcessor;
+import Helpers.utils.FileUtils;
+import Helpers.utils.Pair;
 
 public class Main {
     public static void main(String[] args) {

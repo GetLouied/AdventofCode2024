@@ -1,8 +1,8 @@
-package Day1.calculations;
+package Helpers.calculations;
 
 import java.util.List;
 
-import Day1.processing.ListProcessor;
+import Helpers.processing.ListProcessor;
 
 public class DistanceCalculator {
 

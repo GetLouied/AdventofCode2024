@@ -1,4 +1,4 @@
-package Day1.utils;
+package Helpers.utils;
 
 public class Pair<T, U> {
     private final T first;

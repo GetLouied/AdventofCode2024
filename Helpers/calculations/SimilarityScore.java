@@ -1,8 +1,10 @@
-package Day1.calculations;
+package Helpers.calculations;
 
 import java.util.List;
-import Day1.processing.ListProcessor;
 import java.util.Map;
+
+import Helpers.processing.ListProcessor;
+
 import java.util.HashMap;
 
 public class SimilarityScore {
