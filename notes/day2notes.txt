@@ -1,0 +1,8 @@
+Day 2 - Challenge 1
+- Read reports file
+- Save each set of reports as a list of lists
+- Initialize safe counter
+- For Each Report list
+    - Check if the next value is Ascending or Descending
+    - Check if each Ascending or Descending list is safe
+- Increment safe counter until complete

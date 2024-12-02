@@ -23,7 +23,7 @@ public class Main {
     }
 
     private static int calculateDistanceFromFile(String filename) throws Exception {
-        Pair<List<Integer>, List<Integer>> parsedFile = FileUtils.parseFile(filename);
+        Pair<List<Integer>, List<Integer>> parsedFile = FileUtils.parseFileIntoPairs(filename);
         List<Integer> col1 = parsedFile.getFirst();
         List<Integer> col2 = parsedFile.getSecond();
         ListProcessor processedLists = new ListProcessor(col1, col2);
@@ -31,7 +31,7 @@ public class Main {
     }
 
     private static int calculateSimilarityScore(String filename) throws Exception {
-        Pair<List<Integer>, List<Integer>> parsedFile = FileUtils.parseFile(filename);
+        Pair<List<Integer>, List<Integer>> parsedFile = FileUtils.parseFileIntoPairs(filename);
         List<Integer> col1 = parsedFile.getFirst();
         List<Integer> col2 = parsedFile.getSecond();
         ListProcessor processedLists = new ListProcessor(col1, col2);

@@ -12,7 +12,7 @@ public class FileUtils {
         return Files.readAllLines(Paths.get(fileName));
     }
 
-    public static Pair<List<Integer>, List<Integer>> parseFile(String fileName) throws IOException {
+    public static Pair<List<Integer>, List<Integer>> parseFileIntoPairs(String fileName) throws IOException {
         List<String> lines = readFile(fileName);
         List<Integer> column1 = new ArrayList<>();
         List<Integer> column2 = new ArrayList<>();
@@ -25,4 +25,22 @@ public class FileUtils {
 
         return new Pair<>(column1, column2);
     }
+
+    public static List<List<Integer>> parseFileLinesIntoLists(String fileName) throws IOException {
+        List<String> lines = readFile(fileName);
+        List<List<Integer>> numbers = new ArrayList<>();
+    
+        for (String line : lines) {
+            String[] arrLine = line.split(" "); 
+            List<Integer> column = new ArrayList<>();
+            
+            for (String num : arrLine) {
+                column.add(Integer.parseInt(num));
+            }
+            numbers.add(column);
+        }
+
+        return numbers;
+    }
+    
 }
