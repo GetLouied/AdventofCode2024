@@ -1,0 +1,7 @@
+Day3 Challenge 1
+- Read file
+- Use Regex to find only valid input mul(X, Y)
+    - Where each number only has 1 to 3 digits
+- Compute the valid mul equation
+- Initialize a total
+- Add all of the products to the total

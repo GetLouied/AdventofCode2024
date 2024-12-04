@@ -12,6 +12,10 @@ public class FileUtils {
         return Files.readAllLines(Paths.get(fileName));
     }
 
+    public static String readFileToString(String filename) throws IOException {
+        return Files.readString(Paths.get(filename));
+    }
+
     public static Pair<List<Integer>, List<Integer>> parseFileIntoPairs(String fileName) throws IOException {
         List<String> lines = readFile(fileName);
         List<Integer> column1 = new ArrayList<>();
