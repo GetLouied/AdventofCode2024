@@ -8,7 +8,7 @@ import java.util.List;
 
 public class FileUtils {
 
-    private static List<String> readFile(String fileName) throws IOException {
+    public static List<String> readFile(String fileName) throws IOException {
         return Files.readAllLines(Paths.get(fileName));
     }
 

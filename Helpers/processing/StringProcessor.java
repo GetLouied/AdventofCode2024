@@ -53,4 +53,17 @@ public class StringProcessor {
 
         return results;
     }
+
+    public static char[][] processToGrid(List<String> lines) {
+        int rows = lines.size();
+        int cols = lines.get(0).length();
+
+        char[][] grid = new char[rows][cols];
+        
+        for (int i = 0; i < rows; i++) {
+            grid[i] = lines.get(i).toCharArray();
+        }
+        
+        return grid;
+    }
 }
